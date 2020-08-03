@@ -1,7 +1,7 @@
 name = "DICOMClient"
 uuid = "552a5c7d-7ce6-47fd-927f-656bb472b0c1"
 authors = ["Dilum Aluthge", "Brown Center for Biomedical Informatics", "JuliaHealth organization", "contributors"]
-version = "0.1.0"
+version = "0.1.0-DEV"
 
 [compat]
 julia = "1.3"
