@@ -25,6 +25,6 @@ function parse_multipart_image(::Val{:jpeg}, body::AbstractVector{UInt8})
         bytes = body[image_start:image_end]
         image_bytes[i] = bytes
     end
-    images = [bytes_to_image(Val(:jpeg), bytes) for bytes in image_bytes]
+    images = [_bytes_to_image("jpeg", bytes) for bytes in image_bytes]
     return images
 end

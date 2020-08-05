@@ -2,11 +2,6 @@ import FileIO
 import ImageMagick
 import Images
 
-function bytes_to_image(::Val{:jpeg}, bytes::AbstractVector{UInt8})
-    image = _bytes_to_image("jpeg", bytes)
-    return image
-end
-
 function _bytes_to_image(file_extension::AbstractString, bytes::AbstractVector{UInt8})
     original_directory = pwd()
     temp_directory = mktempdir()
