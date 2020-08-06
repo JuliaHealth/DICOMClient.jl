@@ -6,7 +6,7 @@ CurrentModule = DICOMClient
 
 ```julia
 using DICOMClient
-using FileIO, ImageInTerminal, ImageMagick
+using FileIO, ImageInTerminal, ImageMagick, Images
 
 base_url = DICOMClient.BaseURL("https://dicomcloud.azurewebsites.net/api")
 auth = DICOMClient.AnonymousAuth()
